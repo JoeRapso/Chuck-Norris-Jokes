@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Joke";
+}
+
+<div class="container" style="margin-top:150px">
+    <div class="text-center">
+        <h2>Chuck Norris Jokes</h2>
+    </div>
+ 
+    <div class="text-center">
+        <p>@Model.joke</p>
+    </div>
+
+    <div class="text-center">
+        <form asp-page-handler="button" method="post">
+            <button class="btn btn-primary">Get Joke</button>
+        </form>
+    </div>
+
+</div>
