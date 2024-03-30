@@ -23,7 +23,7 @@ namespace AppDemo.Pages
             joke = await apiService.GetApiData();
         }
 
-        public async Task OnPostButton()
+        public async Task OnPost()
         {
             joke = await apiService.GetApiData();
 
